@@ -137,14 +137,14 @@ module.exports = [
             new HtmlWebpackPlugin({
                 chunks: ['lib.min', 'gui.min'],
                 template: 'src/playground/index.ejs',
-                title: 'E羊icques: A Scratch mod with a custom aspect ratio that can load an extension from a URL',
+                title: 'スクーミーワールドスクラッチ',
                 sentryConfig: process.env.SENTRY_CONFIG ? '"' + process.env.SENTRY_CONFIG + '"' : null
             }),
             new HtmlWebpackPlugin({
                 chunks: ['lib.min', 'flags.min'],
                 template: 'src/playground/index.ejs',
                 filename: 'flags.html',
-                title: 'E羊icques: URL settings'
+                title: 'スクーミーワールドスクラッチ: URL設定'
             }),
             new CopyWebpackPlugin([{
                 from: 'static',
